@@ -18,7 +18,8 @@ namespace sif {
  * A callable element which returns true if an edge should be
  * filtered out of the correlated set and false if the edge is usable
  */
-using EdgeFilter = std::function<bool (const baldr::DirectedEdge*)>;
+//using EdgeFilter = std::function<bool (const baldr::DirectedEdge*)>;
+typedef std::function<bool (const baldr::DirectedEdge*)> EdgeFilter;
 
 // Default unit size (seconds) for cost sorting.
 constexpr uint32_t kDefaultUnitSize = 1;
